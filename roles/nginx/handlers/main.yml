@@ -1,0 +1,4 @@
+- name: start nginx
+  command: /usr/local/openresty/nginx/sbin/nginx 
+- name: reload nginx
+  command: sudo /usr/local/openresty/nginx/sbin/nginx -s reload

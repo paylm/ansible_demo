@@ -1,0 +1,17 @@
+name: nginx global config
+nginx_port: 80
+webroot: /usr/local/openresty/nginx/html
+nginx_server_name: localhost
+nginx_user: nobody
+ups:
+  - name: upsim
+    port: 3000
+    hosts:
+      - 127.0.0.1
+      - 127.0.0.2
+      - 127.0.0.3
+  - name: space
+    port: 10081
+    hosts:
+      - 172.20.205.160
+      - 172.20.205.161

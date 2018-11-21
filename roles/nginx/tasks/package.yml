@@ -1,0 +1,5 @@
+---
+- name: cp nginx
+  command: echo "cp nginx src"
+- name: make nginx
+  command: echo "make nginx"

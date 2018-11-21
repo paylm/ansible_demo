@@ -1,0 +1,7 @@
+- name: items test
+  command: touch /tmp/conf/{{ item }}.conf state=present groups=paylm
+  with_items:
+    - text1
+    - text2
+    - text3
+  tags: items

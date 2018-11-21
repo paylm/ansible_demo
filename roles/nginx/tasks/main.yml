@@ -1,0 +1,12 @@
+---
+- include: package.yml
+- include: withems.yml
+- name: install nginx
+  command: echo "install nginx"
+- name: config nginx
+  template: src=template/nginx.conf.j2 dest=/tmp/conf/nginx.conf
+  notify: reload nginx
+  tags: tc1
+- name: exec script
+  script: file/a.sh
+ 
